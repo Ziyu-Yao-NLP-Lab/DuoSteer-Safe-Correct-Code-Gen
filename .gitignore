@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+results/
+checkpoints/
+*.sarif
+codeql_db/
+hf_home/
+*.egg-info/
+.ipynb_checkpoints/
+.DS_Store
