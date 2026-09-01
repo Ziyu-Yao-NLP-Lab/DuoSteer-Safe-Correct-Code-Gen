@@ -1,0 +1,13 @@
+# Core (representation extraction, probing, causal analysis, steering, SFT)
+torch>=2.1
+transformers>=4.43
+accelerate>=0.30
+numpy>=1.24
+matplotlib>=3.7
+
+# GPT-4.1 judge / pair annotation (OpenAI Batch API)
+openai>=1.30
+
+# SecCodePLT unit-test evaluation (parquet loading)
+pandas>=2.0
+pyarrow>=14.0
