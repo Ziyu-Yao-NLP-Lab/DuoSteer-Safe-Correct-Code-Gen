@@ -3,7 +3,7 @@
 Code and data for the paper [Interpreting and Steering for Safe and Correct Code Generation](https://arxiv.org/abs/2608.30025) (accepted to EMNLP 2026 Main).
 
 - **Paper:** https://arxiv.org/abs/2608.30025
-- **CodeSec-Pairs dataset:** https://huggingface.co/datasets/haaao821/CodeSec-Pairs
+- **CodeSec-Pairs dataset:** https://huggingface.co/datasets/haaao821/CodeSec-Pairs (temporary disabled for bug fixing.)
 
 Large language models frequently generate source code that is insecure, yet little work studies the internal mechanisms behind this failure. This work performs a mechanistic interpretation of code LLMs and turns the insights into steering strategies that make generated code safer without losing functional correctness. We introduce **CodeSec-Pairs**, a dataset of 9,342 Python safe-vs-vulnerable contrastive code pairs (4,260 intra-prompt and 5,082 cross-prompt) sampled from Llama-3.1-8B-Instruct and labeled with CodeQL static analysis. Using it, we localize the layers and attention heads that encode code safety with linear probing and causal head knockout, and experiment with inference-time steering. Our main method, **DuoSteer**, is a double-steering approach that applies a safety direction and a code-correctness direction to attention heads at the same time. Over five vulnerability types (CWEs), DuoSteer reduces the vulnerability rate by 26.9% on average while improving functional correctness by 7.5%, outperforming other steering variants as well as prompting and supervised fine-tuning baselines, and the pattern replicates on Qwen-2.5-Coder-7B-Instruct.
 
